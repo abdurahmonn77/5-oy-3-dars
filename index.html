@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="icon" href="images/pokemon-icon.png">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <title>Pokedex</title>
+</head>
+<body>
+    <main>
+        <section class="pt-[20px] mb-[20px]">
+            <div class="w-[1300px] mx-auto">
+                <form action="">
+                    <input type="text" name="search bar" id="" class="search-input w-[700px] py-[18px] rounded-[40px] shadow-sm shadow-black pl-[30px] outline-0" placeholder="Enter name or random number...">
+                    
+                </form>
+            </div>
+        </section>
+        <section class="">
+            <div class="w-[1300px] mx-auto flex">
+                <ul class="pokemon-list flex flex-wrap gap-7 w-[65%] h-[600px] overflow-auto">
+
+                </ul>
+                <div class="selected-pokemon w-[35%] bg-white h-[600px] rounded-md shadow-lg shadow-black px-[20px]">
+    
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./JS/pakemon.js"></script>
+<script src="./JS/main.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</html>
